@@ -1,4 +1,5 @@
 // Class average program with sentinel-controlled repetition.
+//Similar to Example#1, this code will calculate the Grade average and the list will stop when "-1" is pressed
       #include <iostream>
       
       using std::cout;
