@@ -1,0 +1,23 @@
+// This program sorts an array's values into ascending order.
+3      #include <iostream>
+4      
+5      using std::cout;
+6      using std::endl;
+7      
+8      #include <iomanip>
+9      
+10    using std::setw;
+11    
+12    int main()
+13    {
+14       const int arraySize = 10;  // size of array a
+15       int a[ arraySize ] = { 2, 6, 4, 8, 10, 12, 89, 68, 45, 37 };
+16       int hold;  // temporary location used to swap array elements
+17    
+18       cout << "Data items in original order\n";
+19    
+20       // output original array
+21       for ( int i = 0; i < arraySize; i++ )
+22          cout << setw( 4 ) << a[ i ];
+
+
