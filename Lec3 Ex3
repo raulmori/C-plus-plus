@@ -39,7 +39,9 @@
        // print team cheer
        if ( giants > patriots )
           cout << “GO GIANTS " << endl;
-                 else cout <<“GO PATRIOTS” << endl;
+        else 
+          cout <<“GO PATRIOTS” << endl;
+       
        return 0;   // successful termination
     
     } // end function main
