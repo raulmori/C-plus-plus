@@ -33,14 +33,14 @@
        } // end while
     
        // termination phase; display number of votes
-       cout << “Giants " << giants << endl;  
-       cout << “Patriots " << patriots << endl;
+       cout << "Giants " << giants << endl;  
+       cout << "Patriots "  << patriots << endl;
     
        // print team cheer
        if ( giants > patriots )
-          cout << “GO GIANTS " << endl;
+          cout << "GO GIANTS " << endl;
         else 
-          cout <<“GO PATRIOTS” << endl;
+          cout <<"GO PATRIOTS " << endl;
        
        return 0;   // successful termination
     
