@@ -1,49 +1,24 @@
-// Testing class Circle3.
-      #include <iostream>  
+// Point3 class definition represents an x-y coordinate pair.
+      #ifndef POINT3_H
+      #define POINT3_H
       
-      using std::cout;
-      using std::endl;
-      using std::fixed;
+      class Point3 {
       
-      #include <iomanip>
+      public:
+         Point3( int = 0, int = 0 ); // default constructor
     
-    using std::setprecision;
-    
-    #include "circle3.h"  // Circle3 class definition
-    
-    int main()
-    {
-       Circle3 circle( 37, 43, 2.5 ); // instantiate Circle3 object
-    
-       // display point coordinates
-       cout << "X coordinate is " << circle.getX() 
-            << "\nY coordinate is " << circle.getY()
-            << "\nRadius is " << circle.getRadius();
-    
-
-circle.setX( 2 );          // set new x-coordinate
-       circle.setY( 2 );          // set new y-coordinate
-       circle.setRadius( 4.25 );  // set new radius      
-    
-       // display new point value
-       cout << "\n\nThe new location and radius of circle are\n";
-       circle.print();
-    
-       // display floating-point values with 2 digits of precision
-       cout << fixed << setprecision( 2 );
-    
-       // display Circle3's diameter
-       cout << "\nDiameter is " << circle.getDiameter();
-    
-       // display Circle3's circumference
-       cout << "\nCircumference is " << circle.getCircumference();
-    
-       // display Circle3's area
-       cout << "\nArea is " << circle.getArea();
-    
-       cout << endl;
-    
-       return 0;  // indicates successful termination
+       void setX( int );    // set x in coordinate pair
+       int getX() const;    // return x from coordinate pair
        
-    } // end main
-
+       void setY( int );    // set y in coordinate pair
+       int getY() const;    // return y from coordinate pair
+       
+       void print() const;  // output Point3 object
+    
+    private:                               
+       int x;  // x part of coordinate pair
+       int y;  // y part of coordinate pair
+    
+    }; // end class Point3
+    
+    #endif
